@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arquitetura de Software</title>
+    <meta name="description" content="Página sobre Arquitetura de Software">
+    <meta name="keywords"
+        content="Arquitetura de Software, Software, Engenharia de Software, Padrões de Arquitetura de Software">
+    <meta name="author" content="Gabriel Alves Coelho">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main>
+
+        <header>Arquitetura de Software</header>
+        <nav>
+            <ul>
+                <li><a href="#introducao">Introdução</a></li>
+                <li><a href="#conceitos">Conceitos</a></li>
+                <li><a href="#padroes">Padrões de Arquitetura</a></li>
+                <li><a href="#tendencias">Tendências em Arquitetura de Software</a></li>
+                <li><a href="#escolha">Escolha da Arquitetura de Software</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+                <li><a href="#referencias">Referências</a></li>
+            </ul>
+        </nav>
+
+
+        <section class="section-style2">
+            <h1 id="introducao">Introdução</h1>
+
+            <article>
+                <p>Atualmente a Tecnologia da Informação é essencial para diversas
+                    atividades cotidianas e até mesmo fundamental para a rotina dos indivíduos,
+                    desta forma, o desenvolvimento de software se torna cada vez mais complexo
+                    visando atender as necessidades de cada pessoa com velocidade e precisão.
+                    Assim, devido a esta complexidade, o termo Arquitetura de Software se torna um
+                    objeto de interesse na área de TI.
+                </p>
+                <p>De certa forma, a Arquitetura de Software tem importante papel no
+                    processo de desenvolvimento e manutenção do sistema, assim, pode ser
+                    definida como a estrutura fundamental de um software, apresentando seus
+                    componentes, funcionamento e projeto de expansão.
+                </p>
+                <p>Em suma, a Arquitetura de Software é essencial no ciclo de vida deste e
+                    pode ser dividida em diversos padrões, os quais serão apresentados no
+                    desenvolvimento desta pesquisa.
+                </p>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="section-style1">
+            <h2 id="conceitos">Conceitos</h2>
+
+            <article>
+                <p>Arquitetura de Software diz respeito à definição dos componentes do
+                    software, bem como suas propriedades externas e relacionamentos com outros
+                    sistemas. Assim, é a estrutura do software.
+                </p>
+                <p>Um padrão de Arquitetura de Software diz respeito à peça fundamental
+                    para concretizar a abstração e sua escolha deve atender os requisitos do sistema
+                    a ser desenvolvido e implementado.
+                </p>
+                <p>Como anteriormente explicado, a Arquitetura de Software representa a
+                    estrutura fundamental de um sistema e pode ser dividida em vários padrões,
+                    alguns deles são apresentados a seguir.
+                </p>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="section-style1">
+            <h3 id="padroes">Padrões de Arquitetura de Software</h3>
+
+            <section class="section-style2">
+                <h4>Arquitetura Client-Server (Cliente-Servidor)</h4>
+
+                <article>
+                    <p>A ideia de desenvolver um sistema em camadas surgiu na década de 90
+                        com a arquitetura cliente-servidor, a qual, separa a aplicação em duas camadas,
+                        o cliente e o servidor. O cliente é a camada responsável por manter a interface
+                        e outro código do sistema. Já o servidor é a camada responsável por manter um
+                        banco de dados, normalmente, relacional.
+                    </p>
+                    <p>Este modelo apresenta um bom funcionamento para atualizações simples
+                        de dados e no caso da necessidade de exibir informações. No que se diz respeito
+                        à implementação de lógica de domínio, com validações de dados, por exemplo,
+                        este modelo não é indicado pois dificulta a manipulação do código.
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h5>Arquitetura em Camadas (Layers)</h5>
+
+                <article>
+                    <p>Um sistema com sua organização em camadas tem cada uma destas com
+                        responsabilidades e funcionalidades específicas e cada uma delas pode ser
+                        modificada de uma maneira independente.
+                    </p>
+                    <p>Na Arquitetura em Camadas, as funcionalidades de cada camada
+                        dependem dos recursos e serviços disponibilizados pela camada abaixo dela.
+                    </p>
+                    <p>Segundo Sommerville(apud Pessôa, 2024) este modelo é utilizado para
+                        as seguintes situações:
+                    </p>
+
+                    <ul>
+                        <li>Quando se deseja construir um recurso novo a partir de um já existente;</li>
+                        <li>Quando o desenvolvimento é feito por equipes distintas, nas quais cada
+                            uma é responsável por uma camada;</li>
+                        <li>Quando a software tem um requisito de proteção multinível.</li>
+                    </ul>
+
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h6>Arquitetura Model-View-Controller (MVC)</h6>
+
+                <article>
+                    <p>A Arquitetura Model-View-Controller separa a apresentação e a interação 
+                        dos dados do sistema, o qual é estruturado em três componentes lógicos, são 
+                        eles: model (modelo), view (visualização) e controller (controlador), desta forma, 
+                        os componentes apresentados interagem entre si da seguinte maneira:
+                    </p>
+                    <p>O model é o responsável pelas regras de negócio e interação com os 
+                        dados. O view é o responsável por definir e gerenciar o modo como os dados 
+                        são apresentados ao usuário. O controller tem a responsabilidade de interagir 
+                        com o usuário e responder de acordo com esta interação. Sendo assim, o 
+                        controller é caracterizado por ser a camada intermediária entre o model e o view. 
+                    </p>
+
+                    <figure>
+                        <img src="img1.jpg" title="Arquitetura MVC" alt="Imagem de Arquitetura MVC">
+                        <figcaption><small>Figura 1: Arquitetura MVC</small></figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h7>Arquitetura Orientada a Serviços</h7>
+
+                <article>
+                    <p>Neste padrão, o sistema é dividido em diversos serviços e cada um deles 
+                        é responsável por uma funcionalidade. Desta forma, interfaces são 
+                        desenvolvidas para melhor comunicação entre os serviços, sem que esta 
+                        dependa de uma linguagem ou plataforma especifica.
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h8>Arquitetura Pipes and Filters (PF ou Dutos e Filtros)</h8>
+
+                <article>
+                    <p>Esta arquitetura divide o software em componentes independentes 
+                        chamados de filtros, cada filtro é responsável por uma operação no fluxo dos 
+                        dados em tempo de execução. O fluxo se inicia com a entrada de um dado em 
+                        um canal, em seguida ocorre sua transformação e os dados processados são 
+                        enviados a um canal de saída.
+                    </p>
+                    <p>Cada filtro é independente, ou seja, pode ser modificado ou substituído 
+                        sem interferir no funcionamento dos demais elementos. Este padrão é 
+                        interessante para aplicações que necessitam realizar o processamento de 
+                        grandes quantidades de dados de maneira eficiente e escalável. Por outro lado, 
+                        sua manutenção é caracterizada por alta complexidade.
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h9>Arquitetura Monolítica</h9>
+
+                <article>
+                    <p>Arquitetura Monolítica é o padrão que se refere a implementação de todos 
+                        os componentes, funcionalidades e estruturas em conjunto em um único bloco 
+                        vertical. Desta forma, todas as funcionalidades são executadas em um único 
+                        processo, no caso de se apresentarem em modularização, todas as camadas 
+                        são interdependentes, ou seja, cada parte do software que for modificada 
+                        interfere no todo.
+                    </p>
+                    <p>Dentre as vantagens da Arquitetura Monolítica estão a menor 
+                        complexidade de implementação, deployment de uma unidade e o 
+                        desenvolvimento rápido. 
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h10>Arquitetura Baseada em Microsserviços</h10>
+
+                <article>
+                    <p>A Arquitetura baseada em Microsserviços pede ser considerada uma 
+                        variante da Arquitetura Orientada a Serviços e também uma antagonista da 
+                        arquitetura Monolítica, pois é possível encontrar serviços ainda menores e mais 
+                        independentes com linguagens e plataformas diferentes.
+                    </p>
+                    <p>Desta forma, Microsserviços são aplicações distribuídas que, por sua vez 
+                        são compostas de outras aplicações menores para formar sistemas complexos.
+                    </p>
+
+                    <figure>
+                        <img src="img2.png" title="Arquitetura Baseada em Microsserviços" alt="Imagem de Arquitetura Baseada em Microsserviços">
+                        <figcaption><small>Figura 2: Arquitetura Baseada em Microsserviços</small></figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h11>Arquitetura Hexagonal</h11>
+
+                <article>
+                    <p>A Arquitetura Hexagonal, também conhecida como ports and adapters 
+                        (portas e adaptadores) separa a lógica de negócio, fundamental para 
+                        desenvolvimento das funcionalidades, da lógica de implementação. Desta forma, 
+                        este padrão apresenta bastante utilidade pois desacopla a aplicação do 
+                        ambiente, utilizando do conceito de portas e adaptadores, assim, facilita a 
+                        integração e manutenção com outros componentes da aplicação. 
+                    </p>
+                    <p>As portas correspondem às interfaces que permitem que a lógica de 
+                        negócios se comunique com o mundo externo, já os adaptadores têm a 
+                        responsabilidade de implementar as portas. 
+                    </p>
+                    <p>O principio da Arquitetura Hexagonal é proteger a camada de domínio da 
+                        aplicação, elemento que rege o desenvolvimento dos componentes, no centro e 
+                        permitir sua conexão com o mundo externo a partir de uma interface padrão. 
+                    </p>
+                    <p>O referido padrão tem como objetivo solucionar um dos principais 
+                        problemas no desenvolvimento de software, o acoplamento. Assim, apresenta 
+                        uma perspectiva diferente sobre a ordem das camadas (geralmente a primeira 
+                        corresponde à interface e a última ao banco de dados), a ideia deste padrão é 
+                        entender o front-end e o back-end como camadas externas ao domínio da 
+                        aplicação. 
+                    </p>
+
+                    <figure>
+                        <img src="img3.svg" title="Arquitetura Hexagonal" alt="Imagem de Arquitetura Hexagonal">
+                        <figcaption><small>Figura 3: Arquitetura Hexagonal</small></figcaption>
+                    </figure>
+                </article>
+            </section>
+
+            <br>
+            
+        </section>
+
+        <br>
+
+        <section class="section-style1">
+            <h12 id="tendencias">Tendências em Arquitetura de Software</h12>
+
+            <p>A Arquitetura de Software é um campo em constante evolução buscando 
+                acompanhar as demandas do mercado de Tecnologia da Informação. Tendo em 
+                vista esta crescente evolução, são apresentadas, a seguir, algumas tendências 
+                no referido assunto
+            </p>
+
+            <section class="section-style2">
+                <h13>Arquitetura Baseada em Eventos</h13>
+
+                <article>
+                    <p>A Arquitetura Baseada em Eventos se caracteriza por apresentar a 
+                        comunicação feita entre os elementos de um sistema através de eventos 
+                        assíncronos, fato que permite um aumento na flexibilidade de construção de 
+                        sistemas distribuídos, na escalabilidade e na resiliência. Este padrão de 
+                        arquitetura é adequado para situações nas quais a integração de sistemas é 
+                        necessária, bem como em aplicações em tempo real, as quais necessitam 
+                        apresentar alta disponibilidade e processamento em tempo hábil. 
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h14>Computação em Nuvem</h14>
+
+                <article>
+                    <p>A possibilidade de se realizar o provisionamento de recursos de 
+                        computação, armazenamento e serviços sob demanda de forma elástica, 
+                        características da computação em nuvem, permitem o aumento da flexibilidade 
+                        para as organizações. De certa forma, a utilização de serviços em nuvem permite 
+                        que as empresas se concentrem em seu core business e deixem a infraestrutura 
+                        por conta do provedor dos serviços. Outras vantagens da adoção da computação 
+                        em nuvem são recursos de escalabilidade automática, tolerância a falhas e 
+                        monitoramento, atributos que contribuem com a melhoria da disponibilidade e 
+                        desempenho dos sistemas. 
+                    </p>
+                </article>
+            </section>
+
+            <br>
+            
+            <section class="section-style2">
+                <h15>Arquitetura Orientada a Valor</h15>
+
+                <article>
+                    <p>O surgimento de novos princípios em Arquitetura de Software visa a 
+                        orientação a valor, assim, a arquitetura tem seu planejamento focado na entrega 
+                        de valor ao cliente final. Esta é uma abordagem que busca compreender 
+                        aspectos referentes ao sistema que trazem valor ao usuário, assim, busca 
+                        desenvolver interfaces mais intuitivas, por exemplo. 
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+            <section class="section-style2">
+                <h16>Arquitetura Orientada a Microsserviços</h16>
+
+                <article>
+                    <p>Como anteriormente definida, a Arquitetura Orientada a Microsserviços 
+                        tem como objetivo dividir um sistema em serviços pequenos e independentes, 
+                        aumentando, assim, a flexibilidade, a resiliência e a escalabilidade. Cabe citar 
+                        que esta arquitetura favorece a utilização de algumas tecnologias emergentes, 
+                        tais como contêineres e orquestração de contêineres como Kubernetes. 
+                    </p>
+                </article>
+            </section>
+
+            <br>
+
+        </section>
+
+        <br>
+
+        <section class="section-style2">
+            <h17 id="escolha">Escolha da Arquitetura de Software</h17>
+            
+            <article>
+                <p>Não existe uma Arquitetura de Software considerada correta para o 
+                    desenvolvimento de um sistema, desta forma, ela deve ser escolhida de acordo 
+                    com as características do software, ou seja, é fundamental considerar as 
+                    peculiaridades do sistema, entre elas, a necessidade de escalabilidade, a 
+                    facilidade de manutenção e evolução, bem como a necessidade de integração 
+                    com outros sistemas. 
+                </p>
+                <p>Desta forma, a escolha da Arquitetura de Software se dá de acordo com 
+                    a complexidade deste, sendo assim, definida de modo que se encaixe e atenda 
+                    ao escopo do sistema. 
+                </p>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="section-style1">
+            <h18 id="conclusao">Conclusão</h18>
+
+            <article>
+                <p>A Arquitetura de Software é uma peça chave para este, pois determina 
+                    sua estrutura, bem como seu funcionamento. A Arquitetura de Software é um 
+                    determinante para atender os principais requisitos do sistema, tais como, 
+                    desempenho e escalabilidade.
+                </p>
+                <p>Dentre os diversos padrões de arquitetura existentes destacam-se a 
+                    Arquitetura Cliente-Servidor, na qual o cliente mantem a camada da interface e 
+                    o servidor mantem o banco de dados, Arquitetura em Camadas, as quais podem 
+                    ser modificadas de forma independente, porém dependem dos recursos 
+                    oferecidos pelas camadas mais baixas, Arquitetura MVC, dividida em model, 
+                    responsável pela interação com os dados, view, responsável pela apresentação 
+                    dos dados e controller, camada intermediária entre model e view, Arquitetura 
+                    Orientada a Serviços, na qual o sistema é dividido em diversos serviços 
+                    independentes, Arquitetura Dutos e Filtros, a qual divide o software em 
+                    elementos chamados filtros, responsáveis por operações dentro do fluxo de 
+                    dados, Arquitetura Monolítica, a qual implementa todos os elementos e 
+                    estruturas em conjunto em um único processo, Arquitetura Baseada em 
+                    Microsserviços, considerada uma variante da Arquitetura Orientada a Serviços e 
+                    Arquitetura Hexagonal, a qual tem como objetivo proteger a camada de domínio 
+                    da aplicação.
+                </p>
+                <p>Além dos padrões citados, cabe destacar a Arquitetura em Nuvem, 
+                    tendencia que permite às organizações focar em seu core business, enquanto o 
+                    provedor de serviços é responsável pela infraestrutura. Destacam-se ainda, 
+                    como tendencias as Arquiteturas Orientada a Valor e Baseada em Eventos. 
+                </p>
+                <p>Em suma, a Arquitetura de Software tem fundamental importância para 
+                    este, assim, é necessário que esta seja escolhida de forma que atenda os 
+                    requisitos do software. Logo, a escolha da arquitetura deve considerar o sistema 
+                    e todos os seus requisitos, para que tal escolha e planejamento ocorram da 
+                    melhor maneira possível. 
+                </p>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="section-style2">
+            <h19 id="referencias">Referências</h19>
+
+            <article>
+                <p class="references-style">
+                    AWARI. <b>Tendências em Arquitetura de Software: Novas Tecnologias e 
+                    Práticas Emergentes.</b> 2023. Disponível em: https://awari.com.br/tendencias-em-arquitetura-de-software-novas-tecnologias-e-praticas-emergentes/?utm_source=blog&utm_campaign=projeto+blog&utm_medium=Te
+                    nd%C3%AAncias%20em%20Arquitetura. Acesso em: 12 ago. 2024. 
+                </p>
+                <p class="references-style">
+                    AWARI. <b>Tipos de Arquitetura de Software: Conheça os Mais Usados.</b> 2023. 
+                    Disponível em: https://awari.com.br/tipos-de-arquitetura-de-software-conheca-os-mais-usados/#:~:text=Conclus%C3%A3o-,Ao%20escolher%20a%20arquitetura%20de%20software%20para%20o%20seu%20projeto,de%20integra. Acesso em: 12 ago. 2024.
+                </p>
+                <p class="references-style">
+                    BORGES, Gustavo de Jesus. <b>Uma Proposta de Arquitetura de 
+                    Microsserviços Aplicada em um Case de E-commerce.</b> 2020. Disponível em: 
+                    https://www.nucleodoconhecimento.com.br/tecnologia/arquitetura-de-microsservicos. Acesso em: 12 ago. 2024. 
+                </p>
+                <p class="references-style">
+                    MODERNA, Engenharia de Software. <b>O que é uma Arquitetura 
+                    Hexagonal?</b> Disponível em: https://engsoftmoderna.info/artigos/arquitetura-hexagonal.html. Acesso em: 12 ago. 2024. 
+                </p>
+                <p class="references-style">
+                    MORE: Mecanismo online para referências, 
+                    versão 2.0. Florianópolis: UFSC Rexlab, 2013. Disponível em: http://www.more.ufsc.br/. Acesso em: 12 ago. 2024
+                </p>
+                <p class="references-style">
+                    NORMANDO, Célio. <b>Arquitetura MVC e princípios de projeto.</b> 2024. 
+                    Disponível em: https://medium.com/@celionormando/arquitetura-mvc-e-princ%C3%ADpios-de-projeto-3d0b278ef910. Acesso em: 12 ago. 2024.
+                </p>
+                <p class="references-style">
+                    PESSÔA, Camila. <b>Padrões arquiteturais: arquitetura de software 
+                    descomplicada.</b> 2024. Disponível em: 
+                    https://www.alura.com.br/artigos/padroes-arquiteturais-arquitetura-software-descomplicada?srsltid=AfmBOopBqNmsKZDRoBanQuvaEAHNSOr0LkD5orpm
+                    ADwcRvU0uwgRXu5z. Acesso em: 12 ago. 2024. 
+                </p>
+                <p class="references-style">
+                    WIKIPÉDIA. <b>Arquitetura de software.</b> 2024. Disponível em: 
+                    https://pt.wikipedia.org/wiki/Arquitetura_de_software. Acesso em: 12 ago. 2024. 
+                </p>
+            </article>
+        </section>
+
+        <br>
+
+        <section class="section-style1">
+            <h20>Gostou?</h20> <h21>Gostou?</h21> <h22>Gostou?</h22> <h23>Gostou?</h23> <h24>Gostou?</h24>
+            <legend>👍 Deixe aqui seu comentário:</legend>
+            <textarea name="comentario" id="comentario" cols="50" rows="5" placeholder="Comentário"></textarea>
+            <button type="button">Enviar</button>
+        </section>
+
+        <br>
+        
+        <footer>
+            <p class="footer-text">&copy; 2024 Gabriel Alves Coelho. Todos os direitos reservados.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
