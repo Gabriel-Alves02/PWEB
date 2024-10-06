@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Pesquisa - Opnião sobre filme</title>
+</head>
+<body>
+    <main>
+        <div id="formulario">
+            <form id="form" onsubmit="enviar()">
+                <section>
+                    <fieldset>
+                        <legend>Perguntas:</legend>
+                        <label>Idade: </label>
+                        <br>
+                        <br>
+                        <input type="text" id="idade">
+                        <br>
+                        <br>
+                        <label>Sexo:</label>
+                        <br>
+                        <br>
+                        <input type="radio" id="masculino" name="sexo" value="M" checked>
+                        <label>Masculino</label>
+                        <input type="radio" id="feminino" name="sexo" value="F">
+                        <label>Feminino</label>
+                        <br>
+                        <br>
+                        <label>Como você avalia o filme?</label>
+                        <br>
+                        <br>
+                        <input type="radio" id="otimo" name="nota" value="otimo" checked>
+                        <label>Ótimo</label>
+                        <input type="radio" id="bom" name="nota" value="bom">
+                        <label>Bom</label>
+                        <input type="radio" id="regular" name="nota" value="regular">
+                        <label>Regular</label>
+                        <input type="radio" id="pessimo" name="nota" value="pessimo">
+                        <label>Péssimo</label>
+                        <br>
+                        <br>
+                        <button onclick="f()">Enviar</button>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <fieldset>
+                        <legend>Resultados: </legend>
+                        <label id="media"></label>
+                        <br>
+                        <br>
+                        <label id="mv"></label>
+                        <br>
+                        <br>
+                        <label id="mn"></label>
+                        <br>
+                        <br>
+                        <label id="tp"></label>
+                        <br>
+                        <br>
+                        <label id="po"></label>
+                        <br>
+                        <br>
+                        <label id="pb"></label>
+                        <br>
+                        <br>
+                        <label id="nm"></label>
+                        <br>
+                        <br>
+                        <label id="nh"></label>
+                    </fieldset>
+                </section>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
