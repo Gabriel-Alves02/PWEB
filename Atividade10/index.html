@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main>
+        <div id="formulario">
+            <form id="form" action="">
+                <section>
+                    <fieldset>
+                        <legend>Calculadora de IMC</legend>
+                        <label>Informe seu peso em Kg:</label>
+                        <br>
+                        <br>
+                        <input type="number" id="peso">
+                        <br>
+                        <br>
+                        <label>Informe sua altura em metros:</label>
+                        <br>
+                        <br>
+                        <input type="number" id="altura">
+                        <br>
+                        <br>
+                        <button onclick="fCalcIMC()">Calcular</button>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <br>
+                        <br>
+                        <img src="img1.jpeg" title="Balança e Fita Métrica" alt="Imagem de Balança e Fita Métrica">
+                        <br>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend>Seu IMC</legend>
+                        <br>
+                        <label id="resultado"></label>
+                        <br>
+                        <br>
+                    </fieldset>
+                </section>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
