@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Janelas</title>
+
+</head>
+<body>
+    <script>
+        function fonMO() {
+            document.getElementById("descr").innerHTML = "Janela Aberta";
+        } 
+
+        function fonOut() {
+            document.getElementById("descr").innerHTML = "Janela Fechada";
+        }
+
+        function fonCk() {
+            document.getElementById("descr").innerHTML = "Janela Quebrada";
+        }
+    </script>
+
+
+    <header>
+        <h1>Abra a Janela</h1>
+    </header>
+
+    <div>
+        <br>
+        <br>
+        <img src="img1.jfif" onmouseover="this.src='img2.jfif'; fonMO() " onmouseout="this.src='img1.jfif'; fonOut()" onclick="this.src='img3.jfif'; fonCk()">
+        <br>
+        <h1 id="descr"></h1>
+    </div>
+</body>
+</html>
