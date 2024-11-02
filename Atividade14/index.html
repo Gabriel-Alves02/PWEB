@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Atividade14</title>
+</head>
+<body>
+    <div id="formulario">
+        <form id="form" action="">
+            <section>
+                <fieldset>
+                    <label>Digite seu texto aqui:</label>
+                    <input type="text" id="inputTexto">
+                    <br>
+                    <br>
+                    <input type="radio" id="maiusculas">Converter para letras maiúsculas
+                    <input type="radio" id="minusculas">Converter para letras minúsculas
+                    <br>
+                    <br>
+                    <button onclick="fExec()">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </fieldset>
+            </section>
+            <br>
+            <section>
+                <fieldset>
+                    <label id="result"></label>
+                </fieldset>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
