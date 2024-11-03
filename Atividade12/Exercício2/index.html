@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>SuperBank</title>
+</head>
+
+<body>
+    <div id="formulario">
+        <form id="form" action="">
+            <section>
+                <fieldset>
+                    <legend>Criar conta corrente:</legend>
+                    <label>Informe seu nome:</label>
+                    <input type="text" id="nome">
+                    <br>
+                    <br>
+                    <label>Informe o nome do banco:</label>
+                    <input type="text" id="banco">
+                    <br>
+                    <br>
+                    <label>Informe o numero da conta:</label>
+                    <input type="text" id="numConta">
+                    <br>
+                    <br>
+                    <label>Informe o saldo:</label>
+                    <input type="number" id="saldo">
+                    <br>
+                    <br>
+                    <label>Informe o saldo especial:</label>
+                    <input type="number" id="saldoEspec">
+                    <br>
+                    <br>
+                </fieldset>
+            </section>
+            <br>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>Criar conta poupança:</legend>
+                    <label>Informe seu nome:</label>
+                    <input type="text" id="nomeP">
+                    <br>
+                    <br>
+                    <label>Informe o nome do banco:</label>
+                    <input type="text" id="bancoP">
+                    <br>
+                    <br>
+                    <label>Informe o numero da conta:</label>
+                    <input type="text" id="numContaP">
+                    <br>
+                    <br>
+                    <label>Informe o saldo:</label>
+                    <input type="number" id="saldoP">
+                    <br>
+                    <br>
+                    <label>Informe o juros:</label>
+                    <input type="number" id="juros">
+                    <br>
+                    <br>
+                    <label>Informe a data de vencimento:</label>
+                    <input type="text" id="dataVenc">
+                    <br>
+                    <br>
+                </fieldset>
+            </section>
+            <br>
+            <br>
+            <section>
+                <fieldset>
+                    <button onclick="fOperaContas()">Criar</button>
+                    <button type="reset" onclick="fLimpar()">Limpar</button>
+                </fieldset>
+            </section>
+            <br>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>Conta corrente:</legend>
+                    <label id="nomeC"></label>
+                    <br>
+                    <br>
+                    <label id="bancoC"></label>
+                    <br>
+                    <br>
+                    <label id="numContaC"></label>
+                    <br>
+                    <br>
+                    <label id="saldoC"></label>
+                    <br>
+                    <br>
+                    <label id="saldoEspecC"></label>
+                </fieldset>
+            </section>
+            <br>
+            <br>
+            <section>
+                <fieldset>
+                    <legend>Conta poupanca:</legend>
+                    <label id="nomeCP"></label>
+                    <br>
+                    <br>
+                    <label id="bancoCP"></label>
+                    <br>
+                    <br>
+                    <label id="numContaCP"></label>
+                    <br>
+                    <br>
+                    <label id="saldoCP"></label>
+                    <br>
+                    <br>
+                    <label id="jurosCP"></label>
+                    <br>
+                    <br>
+                    <label id="dataVencCP"></label>
+                </fieldset>
+            </section>
+        </form>
+    </div>
+</body>
+
+</html>
