@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora de Retângulos</title>
+</head>
+<body>
+    <header>
+        <title>Calculadora de Retângulos</title>
+    </header>
+    <div id="formulario">
+        <form id="form" action="">
+            <section>
+                <fieldset>
+                    <legend>Entrada de dados:</legend>
+                    <br>
+                    <label>Informe a medida da base:</label>
+                    <br>
+                    <br>
+                    <input type="number" id="base">
+                    <br>
+                    <br>
+                    <label>Informe a medida da altura:</label>
+                    <br>
+                    <br>
+                    <input type="number" id="altura">
+                    <br>
+                    <br>
+                    <button onclick="fCalcArea()">Calcular</button>
+                    <button type="reset" onclick="fLimpar()">Limpar</button>
+                    <br>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Resultado:</legend>
+                    <br>
+                    <label id="resultado"></label>
+                    <br>
+                    <br>
+                </fieldset>
+            </section>
+        </form>
+    </div>
+</body>
+</html>
